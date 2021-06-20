@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap icon cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <!-- Weather icons cdn link -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css"
+    />
+    <!-- CSS styles link -->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Bennu Weather Forecast</title>
+  </head>
+  <body>
+    <div class="container main-page">
+      <nav>
+        <div class="menu">
+          <hr class="line-1" />
+          <hr class="line-2" />
+        </div>
+        
+        <h3 class="title">Weather Forecast<h3/>
+      </nav>
+      <div id="main">
+        <div class="weather-details">
+          <div class="date">
+            <div class="date-icon"><i class="bi bi-cloud-drizzle-fill"></i></div>
+            <div class="date-content">
+              <h2>Today</h2>
+              <p class="current-date">Sat, 3 Aug</p>
+            </div>
+          </div>
+          <div class="temperature">
+            <h1 class="current-temperature">28<span> °C</span></h1>
+          </div>
+          <div class="location">
+            <p class="current-location">Barcelona, Spain <i class="bi bi-pencil-square"></i></p>
+          </div>
+          <p class="feeling-details">Feels like 32 <span><i class="bi bi-dot"></i></span> Sunset 20:15</p>
+        </div>
+          <div class="forecast-date">
+            <p class="today-weather active">Today</p>
+            <p class="forecast-date-weather">Tomorrow</p>
+            <p><a href="nextDayPage.html"
+              >Next 7 Days <i class="bi bi-chevron-right"></i></a></p>
+          </div>
+          <div class="forecast-temperature">
+            <div class="forecast-card">
+              <p>12AM</p>
+              <div class="icon"><i class="bi bi-brightness-high-fill"></i></div>
+              <p class="card-temperature">26°c</p>
+            </div>
+            <div class="forecast-card">
+              <p>2PM</p>
+              <div class="icon"><i class="bi bi-cloud-sun-fill"></i></i></div>
+              <p class="card-temperature">26°c</p>
+            </div>
+            <div class="forecast-card">
+              <p>4PM</p>
+              <div class="icon"><i class="bi bi-cloud-drizzle-fill"></i></div>
+              <p class="card-temperature">26°c</p>
+            </div>
+            <div class="forecast-card">
+              <p>6PM</p>
+              <div class="icon"><i class="bi bi-cloud-fill"></i></div>
+              <p class="card-temperature">26°c</p>
+            </div>
+            <div class="forecast-card">
+              <p>8PM</p>
+              <div class="icon"><i class="bi bi-cloud-moon-fill"></i></div>
+              <p class="card-temperature">26°c</p>
+            </div>
+          </div>
+          <div class="forecast-weather">
+            <h4>Chance of rain</h4>
+            <div class="graphs">
+              <div class="rain-forecast">
+                <p>sunny</p>
+                <p>rainy</p>
+                <p>heavy <br>rain</p>
+              </div>
+              <div class="graph-card">
+                <span class="graph"></span>
+                <p>10AM</p>
+              </div>
+              <div class="graph-card">
+                <span class="graph"></span>
+                <p>12AM</p>
+              </div>
+              <div class="graph-card">
+                <span class="graph "></span>
+                <p>2PM</p>
+              </div>
+              <div class="graph-card">
+                <span class="graph active"></span>
+                <p>4PM</p>
+              </div>
+              <div class="graph-card">
+                <span class="graph"></span>
+                <p>6PM</p>
+              </div>
+              <div class="graph-card">
+                <span class="graph"></span>
+                <p>8PM</p>
+              </div>
+            </div>
+          </div> 
+      </div>
+      <hr class="line" />
+    </div>
+
+    <script src="./mainPage.js"></script>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap icon cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <!-- Weather icons cdn link -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css"
+    />
+    <!-- CSS styles link -->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Bennu Weather Forecast</title>
+  </head>
+  <body>
+    <div class="container next-page-container ">
+        <nav>
+        <div class="menu">
+          <hr class="line-1" />
+          <hr class="line-2" />
+        </div>
+        <h3 class="title">Weather Forecast<h3/>
+      </nav>
+      <a href="index.html" class="icon-link"><i class="bi bi-chevron-left"></i></a>
+      <h1 class="next-day-title">Next <span class="title-7days">7 days</span></h1>
+      <div class="weather-details-card">
+          <div class="title-part">
+              <div class="day">
+                  <h4 class="current-date">Today <i class="bi bi-cloud-sun-fill"></i></h4>
+              </div>
+              <div class="min-max-temperature">
+                  <h4 class="max">26°C <span class="min">19°C</span></h4>
+              </div>
+          </div>
+          <div class="bottow-part">
+              <div class="left">
+                  <div class="card ">
+                      <h5>Wind</h5>
+                      <p class="wind-details">12 m/h</p>
+                  </div>
+                   <div class="card lower-card">
+                      <h5>Visibility</h5>
+                      <p class="visibility-details">25 km</p>
+                  </div>
+              </div>
+              <div class="right">
+                  <div class="card">
+                      <h5>Humidity</h5>
+                      <p class="humidity-details">55%</p>
+                  </div>
+                  <div class="card lower-card">
+                      <h5>UV</h5>
+                      <p class="uv-details">1</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <p class="fixed-temperature">20°C</p>
+      
+      <div class="next-days-details">
+          <div class="day-details">
+              <div>
+                  <h5>TUE <br><i class="bi bi-droplet-fill"></i><span>54%</span></h5>
+              </div>
+              <i class="bi bi-cloud-sun-fill"></i>
+              <h5 class="min-temperature">15°C</h5>
+              <span class="temperature-graph"></span>
+              <h5 class="max-temperature">24°C</h5>
+          </div>
+          <div class="day-details">
+              <div>
+                  <h5>WED <br><i class="bi bi-droplet-fill"></i><span>54%</span></h5>
+              </div>
+              <i class="bi bi-brightness-high-fill"></i>
+              <h5 class="min-temperature">19°C</h5>
+              <span class="temperature-graph"></span>
+              <h5 class="max-temperature">28°C</h5>
+          </div>
+          <div class="day-details">
+              <div>
+                  <h5>THU <br><i class="bi bi-droplet-fill"></i><span>54%</span></h5>
+              </div>
+              <i class="bi bi-cloud-sun-fill"></i>
+              <h5 class="min-temperature">17°C</h5>
+              <span class="temperature-graph"></span>
+              <h5 class="max-temperature">25°C</h5>
+          </div>
+          <div class="day-details">
+              <div>
+                  <h5>FRI <br><i class="bi bi-droplet-fill"></i><span>54%</span></h5>
+              </div>
+              <i class="bi bi-cloud-lightning-rain-fill"></i>
+              <h5 class="min-temperature">15°C</h5>
+              <span class="temperature-graph"></span>
+              <h5 class="max-temperature">21°C</h5>
+          </div>
+          <div class="day-details">
+              <div>
+                  <h5>SAT <br><i class="bi bi-droplet-fill"></i><span>54%</span></h5>
+              </div>
+              <i class="bi bi-cloud-drizzle-fill"></i>
+              <h5 class="min-temperature">14°C</h5>
+              <span class="temperature-graph"></span>
+              <h5 class="max-temperature">18°C</h5>
+          </div>
+          <div class="day-details">
+              <div>
+                  <h5>SUN <br><i class="bi bi-droplet-fill"></i><span>54%</span></h5>
+              </div>
+              <i class="bi bi-brightness-high-fill"></i>
+              <h5 class="min-temperature">18°C</h5>
+              <span class="temperature-graph"></span>
+              <h5 class="max-temperature">24°C</h5>
+          </div>
+      </div>
+      <hr class="line" />
+    </div>
+    <script src="./nextPage.js"></script>
+    
+  </body>
+</html>

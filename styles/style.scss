@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@100;300;400;500&display=swap");
+@import "global";
+@import "nextDaypage";
+
+// menu part
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .title {
+    text-align: center;
+    margin-top: 0;
+    font-size: 1.3rem;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+  }
+  hr {
+    border: none;
+    border-top: 3.5px #e4f5fd solid;
+    border-radius: 2px;
+    width: 40px;
+    margin-top: 0;
+  }
+  .line-2 {
+    width: 22px;
+    margin-left: 0;
+  }
+}
+// main part
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 300;
+  justify-content: center;
+  text-align: center;
+
+  .date {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -20px;
+    .date-icon {
+      font-size: 2.5rem;
+      color: #3879e0;
+      margin-right: 12px;
+    }
+    .date-content {
+      text-align: center;
+      h2 {
+        font-size: 2rem;
+        margin-bottom: -5px;
+      }
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  }
+  .temperature {
+    text-align: center;
+    h1 {
+      font-size: 8rem;
+      font-weight: 200;
+      margin: 0;
+      position: relative;
+      span {
+        font-size: 2.5rem;
+        position: absolute;
+        top: 35px;
+      }
+    }
+  }
+  .location {
+    margin-top: -15px;
+    i {
+      font-size: 0.6rem;
+    }
+  }
+  .feeling-details {
+    margin-top: 25px;
+    span {
+      vertical-align: middle;
+      i {
+        font-size: 1.3rem;
+      }
+    }
+  }
+  .forecast-date {
+    display: flex;
+    flex-direction: row;
+
+    p {
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin: 25px 20px;
+      a {
+        color: #3879e0;
+      }
+    }
+    .forecast-date-weather {
+      cursor: pointer;
+    }
+    .forecast-date-weather.active,
+    .today-weather.active {
+      position: relative;
+      &::after {
+        content: "";
+        display: block;
+        height: 7px;
+        width: 7px;
+        background-color: rgba(#e4f5fd, 0.9);
+        border-radius: 3px;
+        position: absolute;
+        left: 45%;
+        top: 30px;
+      }
+    }
+  }
+  //  forecast temperature part
+  .forecast-temperature {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+
+    .forecast-card {
+      background-color: rgba(#aac2df, 0.1);
+      border: 1px #aac2df solid;
+      border-radius: 50px;
+      padding: 0.2rem 1.1rem;
+      margin: 3.5px;
+      transition: all 0.2s ease;
+      &:hover {
+        background-color: white;
+        color: #10103b;
+        box-shadow: 8px 8px 12px 10px rgba(#aac2df, 0.1);
+        transform: translateY(-12%);
+        .icon {
+          color: #3879e0;
+          background-color: rgba(#aac2df, 0.1);
+        }
+      }
+      .card-temperature {
+        font-size: 1.4rem;
+        font-weight: 500;
+      }
+      .icon {
+        font-size: 1.5rem;
+        background-color: rgba(#10103b, 0.3);
+        width: 50px;
+        line-height: 50px;
+        vertical-align: middle;
+        border-radius: 30px;
+      }
+    }
+  }
+
+  // ****** forecast-weather part ******
+  .forecast-weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    text-align: left;
+
+    h4 {
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+
+    .graphs {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      .rain-forecast {
+        p {
+          font-size: 0.8rem;
+          font-weight: 500;
+          margin: 5px 10px 25px 0px;
+        }
+      }
+      .graph-card {
+        margin: 12px;
+        .graph {
+          display: block;
+          border-left: 2px #3c405c dashed;
+          height: 120px;
+          transform: translateX(50%);
+          position: relative;
+
+          &.active::after {
+            background-color: yellow;
+          }
+          &::after {
+            content: "";
+            display: block;
+            border-radius: 10px;
+            height: 80px;
+            width: 20px;
+            background-color: #3c405c;
+            transform: translateX(-55%);
+            position: absolute;
+            bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}

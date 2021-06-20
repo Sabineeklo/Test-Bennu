@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  align-items: center;
+  background-color: #8fc0fd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 3rem;
+  padding: 1rem;
+  font-family: "Noto Sans HK", sans-serif;
+}
+.container {
+  background-color: #10103b;
+  border: 10px #e4f5fd solid;
+  border-radius: 50px;
+  color: rgba(#e4f5fd, 0.9);
+  padding: 3rem 1.8rem;
+  width: 375pt;
+
+  p {
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+    font-weight: 300;
+  }
+  a {
+    text-decoration: none;
+    color: rgba(#e4f5fd, 0.9);
+  }
+
+  .line {
+    border: none;
+    border-top: 8px #e4f5fd solid;
+    border-radius: 10px;
+    margin-bottom: -35px;
+    width: 50%;
+  }
+}
+.container.light-theme {
+  background-color: #f0fbfe;
+  border: 10px rgba(#aac2df, 0.4) solid;
+  color: #050566;
+  .line {
+    border-top: 8px rgba(#aac2df, 0.4) solid;
+  }
+  nav {
+    hr {
+      border-top: 3.5px #10103b solid;
+    }
+  }
+  .icon-link {
+    i {
+      color: #10103b;
+    }
+  }
+  .weather-details-card {
+    background-color: white;
+  }
+  .day-details {
+    .temperature-graph {
+      border-top: 30px rgba(#aac2df, 0.65) solid;
+    }
+  }
+}
