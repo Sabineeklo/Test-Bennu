@@ -164,7 +164,18 @@
         transform: translateX(55%);
         position: relative;
         z-index: 10;
+
         &::after {
+          content: "";
+          width: 35px;
+          border-top: 30px rgb(252, 65, 8) solid;
+          position: absolute;
+          top: -30px;
+          border-radius: 0px 18px 18px 0px;
+          left: 56%;
+        }
+
+        &::before {
           content: "";
           border-top: 2px rgba(#aac2df, 0.3) dashed;
           width: 110px;

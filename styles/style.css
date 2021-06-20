@@ -316,6 +316,16 @@ body {
 
 .next-page-container .next-days-details .day-details .temperature-graph::after {
   content: "";
+  width: 35px;
+  border-top: 30px #fc4108 solid;
+  position: absolute;
+  top: -30px;
+  border-radius: 0px 18px 18px 0px;
+  left: 56%;
+}
+
+.next-page-container .next-days-details .day-details .temperature-graph::before {
+  content: "";
   border-top: 2px rgba(170, 194, 223, 0.3) dashed;
   width: 110px;
   position: absolute;
